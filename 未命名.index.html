@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>盛世德坤国际物流 - 一级货运资质·全球物流解决方案提供商</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind 配置 -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#165DFF',
+            secondary: '#0F2E68',
+            neutral: '#667085',
+            light: '#F9FAFB',
+            dark: '#1D2939'
+          },
+          fontFamily: {
+            inter: ['Inter', 'sans-serif'],
+          },
+        },
+      }
+    }
+  </script>
+  
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+      .text-shadow {
+        text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+      .transition-custom {
+        transition: all 0.3s ease;
+      }
+    }
+  </style>
+  
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .hero-gradient {
+      background: linear-gradient(135deg, rgba(22, 93, 255, 0.9) 0%, rgba(15, 46, 104, 0.8) 100%);
+    }
+    .card-hover:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 20px rgba(0,0,0,0.08);
+    }
+    .nav-scrolled {
+      background-color: white;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+  </style>
+</head>
+
+<body class="font-inter text-dark bg-light">
+  <!-- 导航栏 -->
+  <header id="navbar" class="fixed w-full top-0 z-50 transition-all duration-300 bg-transparent">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <!-- 公司LOGO -->
+        <a href="#" class="flex items-center space-x-2">
+          <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+            <i class="fa fa-globe text-white text-xl"></i>
+          </div>
+          <span class="text-xl font-bold text-white">盛世德坤</span>
+        </a>
+        
+        <!-- 桌面导航 -->
+        <nav class="hidden md:flex space-x-8">
+          <a href="#home" class="text-white hover:text-primary/80 transition-custom font-medium">首页</a>
+          <a href="#about" class="text-white hover:text-primary/80 transition-custom font-medium">关于我们</a>
+          <a href="#business" class="text-white hover:text-primary/80 transition-custom font-medium">主营业务</a>
+          <a href="#fba" class="text-white hover:text-primary/80 transition-custom font-medium">FBA线路</a>
+          <a href="#dg" class="text-white hover:text-primary/80 transition-custom font-medium">纯电DG柜</a>
+          <a href="#warehouse" class="text-white hover:text-primary/80 transition-custom font-medium">海外仓资源</a>
+          <a href="#inquiry" class="text-white hover:text-primary/80 transition-custom font-medium">客户询价</a>
+          <a href="#contact" class="text-white hover:text-primary/80 transition-custom font-medium">联系我们</a>
+        </nav>
+        
+        <!-- 客服电话（固定右上角） -->
+        <div class="hidden md:flex items-center space-x-2 text-white font-medium">
+          <i class="fa fa-phone text-xl"></i>
+          <span>客服致电：15773726666</span>
+        </div>
+        
+        <!-- 移动端菜单按钮 -->
+        <button id="menuBtn" class="md:hidden text-white text-2xl">
+          <i class="fa fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    
+    <!-- 移动端导航菜单 -->
+    <div id="mobileMenu" class="md:hidden hidden bg-white shadow-lg absolute w-full">
+      <div class="container mx-auto px-4 py-3">
+        <nav class="flex flex-col space-y-3">
+          <a href="#home" class="text-dark hover:text-primary py-2 transition-custom">首页</a>
+          <a href="#about" class="text-dark hover:text-primary py-2 transition-custom">关于我们</a>
+          <a href="#business" class="text-dark hover:text-primary py-2 transition-custom">主营业务</a>
+          <a href="#fba" class="text-dark hover:text-primary py-2 transition-custom">FBA线路</a>
+          <a href="#dg" class="text-dark hover:text-primary py-2 transition-custom">纯电DG柜</a>
+          <a href="#warehouse" class="text-dark hover:text-primary py-2 transition-custom">海外仓资源</a>
+          <a href="#inquiry" class="text-dark hover:text-primary py-2 transition-custom">客户询价</a>
+          <a href="#contact" class="text-dark hover:text-primary py-2 transition-custom">联系我们</a>
+          <div class="flex items-center space-x-2 text-primary pt-2 border-t border-gray-100">
+            <i class="fa fa-phone"></i>
+            <span>客服致电：15773726666</span>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- 英雄区域 -->
+  <section id="home" class="hero-gradient pt-28 pb-20 md:pt-40 md:pb-32 relative overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img src="https://picsum.photos/id/1033/1920/1080" alt="国际物流" class="w-full h-full object-cover opacity-20">
+    </div>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="max-w-3xl">
+        <h1 class="text-[clamp(2rem,5vw,3.5rem)] font-bold text-white leading-tight text-shadow mb-6">
+          一级国际货运资质<br>全球物流解决方案专家
+        </h1>
+        <p class="text-[clamp(1rem,2vw,1.25rem)] text-white/90 mb-8 max-w-2xl">
+          10年+行业经验，专注美国、欧洲、加拿大等多国空海运服务，自主订板定柜，双清包税到门，安全可靠时效稳定。
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#inquiry" class="bg-white text-primary font-medium py-3 px-8 rounded-lg transition-custom text-center hover:bg-gray-100">
+            立即询价
+          </a>
+          <a href="#business" class="bg-primary/20 hover:bg-primary/30 backdrop-blur-sm text-white font-medium py-3 px-8 rounded-lg transition-custom border border-white/30 text-center">
+            了解服务 <i class="fa fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+      
+      <!-- 核心优势标签 -->
+      <div class="flex flex-wrap gap-4 mt-12 max-w-4xl">
+        <div class="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-white flex items-center space-x-2">
+          <i class="fa fa-check-circle"></i>
+          <span>商务部批准一级资质</span>
+        </div>
+        <div class="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-white flex items-center space-x-2">
+          <i class="fa fa-check-circle"></i>
+          <span>全球主要航线约价</span>
+        </div>
+        <div class="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-white flex items-center space-x-2">
+          <i class="fa fa-check-circle"></i>
+          <span>双清包税到门服务</span>
+        </div>
+        <div class="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-white flex items-center space-x-2">
+          <i class="fa fa-check-circle"></i>
+          <span>3大海外仓布局</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 波浪装饰 -->
+    <div class="absolute bottom-0 left-0 w-full overflow-hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" class="w-full h-auto">
+        <path fill="#F9FAFB" fill-opacity="1" d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- 关于我们 -->
+  <section id="about" class="py-20 bg-light">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark mb-4">关于盛世德坤</h2>
+        <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+        <p class="text-neutral max-w-2xl mx-auto">经商务部严格批准的一级国际货运公司，以专业团队和全球网络，提供高水准物流服务</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="relative">
+          <img src="https://picsum.photos/id/1048/800/600" alt="公司办公环境" class="w-full h-auto rounded-xl shadow-lg">
+          <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-lg shadow-lg max-w-xs">
+            <div class="flex items-center space-x-4 mb-3">
+              <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                <i class="fa fa-certificate text-primary text-xl"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-dark">一级货运资质</h3>
+                <p class="text-sm text-neutral">商务部严格批准</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div>
+          <h3 class="text-2xl font-bold mb-4">专业物流服务提供商</h3>
+          <p class="text-neutral mb-6">深圳市盛世德坤国际物流有限公司是经商务部严格批准成立的一级国际货运公司，拥有大批曾服务于一流跨国物流公司、经验超过10年的专业、敬业、高效、高素质人才团队。</p>
+          
+          <div class="space-y-4 mb-8">
+            <div class="flex items-start space-x-3">
+              <div class="mt-1 w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                <i class="fa fa-check text-primary text-sm"></i>
+              </div>
+              <p class="text-neutral">与几十家国际公司建立良好合作关系，签有全球主要航线约价，自主订板定柜</p>
+            </div>
+            <div class="flex items-start space-x-3">
+              <div class="mt-1 w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                <i class="fa fa-check text-primary text-sm"></i>
+              </div>
+              <p class="text-neutral">服务覆盖香港、深圳、广州等多城市，国际代理网络遍及欧美、澳洲、东南亚等地区</p>
+            </div>
+            <div class="flex items-start space-x-3">
+              <div class="mt-1 w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                <i class="fa fa-check text-primary text-sm"></i>
+              </div>
+              <p class="text-neutral">清关能力强，安全可靠时效稳定，提供全国免费提货服务</p>
+            </div>
+          </div>
+          
+          <!-- 合作客户 -->
+          <div>
+            <h4 class="font-semibold text-dark mb-3">合作客户（部分）</h4>
+            <div class="flex flex-wrap gap-4">
+              <span class="bg-gray-100 px-3 py-1 rounded-full text-sm text-neutral">科沃斯</span>
+              <span class="bg-gray-100 px-3 py-1 rounded-full text-sm text-neutral">洲明科技</span>
+              <span class="bg-gray-100 px-3 py-1 rounded-full text-sm text-neutral">光祥科技</span>
+              <span class="bg-gray-100 px-3 py-1 rounded-full text-sm text-neutral">珈伟光伏</span>
+              <span class="bg-gray-100 px-3 py-1 rounded-full text-sm text-neutral">北京352</span>
+              <span class="bg-gray-100 px-3 py-1 rounded-full text-sm text-neutral">国显科技</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 主营业务 -->
+  <section id="business" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark mb-4">主营业务</h2>
+        <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+        <p class="text-neutral max-w-2xl mx-auto">覆盖全球主要贸易区域，提供多元化物流解决方案，满足不同客户运输需求</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- 业务卡片1 -->
+        <div class="bg-white rounded-xl shadow-md p-8 transition-custom card-hover">
+          <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+            <i class="fa fa-ship text-primary text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">国际海运服务</h3>
+          <p class="text-neutral mb-4">美森正班船、美森MAX、普船海派（COSCO/EMC/CMA/ZIM/OOCL），整柜/散货双清包税专线。</p>
+          <ul class="space-y-2 mb-6">
+            <li class="flex items-center text-neutral">
+              <i class="fa fa-angle-right text-primary mr-2"></i>
+              美国、欧洲、加拿大海运
+            </li>
+            <li class="flex items-center text-neutral">
+              <i class="fa fa-angle-right text-primary mr-2"></i>
+              墨西哥、巴西专线海运
+            </li>
+            <li class="flex items-center text-neutral">
+              <i class="fa fa-angle-right text-primary mr-2"></i>
+              港口清关、提柜拆柜服务
+            </li>
+          </ul>
+        </div>
+        
+        <!-- 业务卡片2 -->
+        <div class="bg-white rounded-xl shadow-md p-8 transition-custom card-hover">
+          <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+            <i class="fa fa-plane text-primary text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">国际空运服务</h3>
+          <p class="text-neutral mb-4">全球主要机场空运专线，国际快递（DHL/UPS/FEDEX），快速补货，7-15天高效送达。</p>
+          <ul class="space-y-2 mb-6">
+            <li class="flex items-center text-neutral">
+              <i class="fa fa-angle-right text-primary mr-2"></i>
+              美国、欧洲、加拿大空派
+            </li>
+            <li class="flex items-center text-neutral">
+              <i class="fa fa-angle-right text-primary mr-2"></i>
+              澳大利亚、墨西哥卡派
+            </li>
+            <li class="flex items-center text-neutral">
+              <i class="fa fa-angle-right text-primary mr-2"></i>
+              超大件海空到门专线
+            </li>
+          </ul>
+        </div>
+        
+        <!-- 业务卡片3 -->
+        <div class="bg-white rounded-xl shadow-md p-8 transition-custom card-hover">
+          <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+            <i class="fa fa-train text-primary text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">多式联运服务</h3>
+          <p class="text-neutral mb-4">中欧班列、卡航等多式联运方案，覆盖欧洲、中亚五国、东南亚等地区，成本与时效平衡。</p>
+          <ul class="space-y-2 mb-6">
+            <li class="flex items-center text-neutral">
+              <i class="fa fa-angle-right text-primary mr-2"></i>
+              中欧卡航（20-25天提取）
+            </li>
+            <li class="flex items-center text-neutral">
+              <i class="fa fa-angle-right text-primary mr-2"></i>
+              中亚五国专线运输
+            </li>
+            <li class="flex items-center text-neutral">
+              <i class="fa fa-angle-right text-primary mr-2"></i>
+              东南亚多式联运
+            </li>
+          </ul>
+        </div>
+        
+        <!-- 业务卡片4 -->
+        <div class="bg-white rounded-xl shadow-md p-8 transition-custom card-hover">
+          <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+            <i class="fa fa-exchange text-primary text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">双清包税服务</h3>
+          <p class="text-neutral mb-4">美国、欧洲、加拿大、墨西哥等国家双清包税到门，全程无忧，无需客户自行处理清关税务。</p>
+          <ul class="space-y-2 mb-6">
+            <li class="flex items-center text-neutral">
+              <i class="fa fa-angle-right text-primary mr-2"></i>
+              进出口报关报检
+            </li>
+            <li class="flex items-center text-neutral">
+              <i class="fa fa-angle-right text-primary mr-2"></i>
+              关税代缴、税务筹划
+            </li>
+            <li class="flex items-center text-neutral">
+              <i class="fa fa-angle-right text-primary mr-2"></i>
+              目的地派送上门
+            </li>
+          </ul>
+        </div>
+        
+        <!-- 业务卡片5 -->
+        <div class="bg-white rounded-xl shadow-md p-8 transition-custom card-hover">
+          <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+            <i class="fa fa-archive text-primary text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">仓储中转服务</h3>
+          <p class="text-neutral mb-4">8000平方米仓储面积，提供亚马逊移仓中转、拆柜换标、库存管理等一体化服务。</p>
+          <ul class="space-y-2 mb-6">
+            <li class="flex items-center text-neutral">
+              <i class="fa fa-angle-right text-primary mr-2"></i>
+              货物存储、库存预警
+            </li>
+            <li class="flex items-center text-neutral">
+              <i class="fa fa-angle-right text-primary mr-2"></i>
+              亚马逊移仓中转
+            </li>
+            <li class="flex items-center text-neutral">
+              <i class="fa fa-angle-right text-primary mr-2"></i>
+              退货换标、重新入库
+            </li>
+          </ul>
+        </div>
+        
+        <!-- 业务卡片6 -->
+        <div class="bg-white rounded-xl shadow-md p-8 transition-custom card-hover">
+          <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+            <i class="fa fa-shield text-primary text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">增值配套服务</h3>
+          <p class="text-neutral mb-4">为跨境电商提供全方位配套服务，解决物流环节各类需求，提升运营效率。</p>
+          <ul class="space-y-2 mb-6">
+            <li class="flex items-center text-neutral">
+              <i class="fa fa-angle-right text-primary mr-2"></i>
+              全国免费提货
+            </li>
+            <li class="flex items-center text-neutral">
+              <i class="fa fa-angle-right text-primary mr-2"></i>
+              货物贴标、包装加固
+            </li>
+            <li class="flex items-center text-neutral">
+              <i class="fa fa-angle-right text-primary mr-2"></i>
+              物流方案定制咨询
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FBA线路 -->
+  <section id="fba" class="py-20 bg-light">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark mb-4">FBA专项线路</h2>
+        <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+        <p class="text-neutral max-w-2xl mx-auto">专注亚马逊FBA物流，提供海运快递派、海运卡派、空运等专线服务，快速补货节省入仓时间</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-12 mb-16">
+        <div class="bg-white rounded-xl shadow-md p-8">
+          <h3 class="text-xl font-bold mb-6 flex items-center">
+            <i class="fa fa-ship text-primary mr-3 text-2xl"></i>
+            海运快递派
+          </h3>
+          <div class="space-y-4">
+            <div class="flex justify-between items-center pb-3 border-b border-gray-100">
+              <span class="text-dark font-medium">美森正班船</span>
+              <span class="text-primary">时效快·稳定性高</span>
+            </div>
+            <div class="flex justify-between items-center pb-3 border-b border-gray-100">
+              <span class="text-dark font-medium">美森MAX</span>
+              <span class="text-primary">高性价比·舱位充足</span>
+            </div>
+            <div class="flex justify-between items-center pb-3 border-b border-gray-100">
+              <span class="text-dark font-medium">普船海派（COSCO/EMC等）</span>
+              <span class="text-primary">成本优化·覆盖广</span>
+            </div>
+            <div class="flex justify-between items-center pb-3 border-b border-gray-100">
+              <span class="text-dark font-medium">覆盖范围</span>
+              <span class="text-neutral">美国、欧洲、加拿大、墨西哥</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-dark font-medium">核心优势</span>
+              <span class="text-neutral">双清包税·门到仓·全程可追溯</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-white rounded-xl shadow-md p-8">
+          <h3 class="text-xl font-bold mb-6 flex items-center">
+            <i class="fa fa-truck text-primary mr-3 text-2xl"></i>
+            海运卡派
+          </h3>
+          <div class="space-y-4">
+            <div class="flex justify-between items-center pb-3 border-b border-gray-100">
+              <span class="text-dark font-medium">美森卡派</span>
+              <span class="text-primary">直达仓库·时效稳定</span>
+            </div>
+            <div class="flex justify-between items-center pb-3 border-b border-gray-100">
+              <span class="text-dark font-medium">普船卡派（COSCO/EMC等）</span>
+              <span class="text-primary">大货优选·成本更低</span>
+            </div>
+            <div class="flex justify-between items-center pb-3 border-b border-gray-100">
+              <span class="text-dark font-medium">英国卡派专线</span>
+              <span class="text-primary">清关便捷·派送高效</span>
+            </div>
+            <div class="flex justify-between items-center pb-3 border-b border-gray-100">
+              <span class="text-dark font-medium">覆盖范围</span>
+              <span class="text-neutral">亚马逊FBA仓库·第三方海外仓</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-dark font-medium">核心优势</span>
+              <span class="text-neutral">大批量发货·成本低廉·准时送达</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="bg-white rounded-xl shadow-md p-8">
+        <h3 class="text-xl font-bold mb-6 flex items-center">
+          <i class="fa fa-plane text-primary mr-3 text-2xl"></i>
+          空运专线
+        </h3>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="space-y-3">
+            <div class="flex justify-between items-center pb-2 border-b border-gray-100">
+              <span class="text-dark font-medium">覆盖国家</span>
+              <span class="text-neutral">美国、欧洲、加拿大</span>
+            </div>
+            <div class="flex justify-between items-center pb-2 border-b border-gray-100">
+              <span class="text-dark font-medium">附加服务</span>
+              <span class="text-neutral">空派·卡派·国际快递</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-dark font-medium">合作快递</span>
+              <span class="text-neutral">DHL·UPS·FEDEX</span>
+            </div>
+          </div>
+          <div class="space-y-3">
+            <div class="flex justify-between items-center pb-2 border-b border-gray-100">
+              <span class="text-dark font-medium">时效参考</span>
+              <span class="text-neutral">7-15天</span>
+            </div>
+            <div class="flex justify-between items-center pb-2 border-b border-gray-100">
+              <span class="text-dark font-medium">适用场景</span>
+              <span class="text-neutral">紧急补货·高时效需求</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-dark font-medium">核心优势</span>
+              <span class="text-neutral">快速高效·安全稳定</span>
+            </div>
+          </div>
+          <div class="space-y-3">
+            <div class="flex justify-between items-center pb-2 border-b border-gray-100">
+              <span class="text-dark font-medium">可接货物</span>
+              <span class="text-neutral">普货·带电·超大件</span>
+            </div>
+            <div class="flex justify-between items-center pb-2 border-b border-gray-100">
+              <span class="text-dark font-medium">清关服务</span>
+              <span class="text-neutral">双清包税·省心省力</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-dark font-medium">配套服务</span>
+              <span class="text-neutral">上门提货·包装加固</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 纯电DG柜 -->
+  <section id="dg" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark mb-4">纯电DG柜专线</h2>
+        <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+        <p class="text-neutral max-w-2xl mx-auto">新推出正规DG柜渠道，专注电池类产品运输，安全合规，时效稳定有保障</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h3 class="text-2xl font-bold mb-6">专业纯电产品运输解决方案</h3>
+          <p class="text-neutral mb-8">我司纯电DG柜渠道，专门接收设备类电池、电动车、平衡车、移动电源等产品，正规渠道操作，全程合规运输，解决纯电产品出口难题。</p>
+          
+          <div class="space-y-6 mb-8">
+            <div class="flex items-start space-x-4">
+              <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <i class="fa fa-check-circle text-primary"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-dark mb-2">可接产品类型</h4>
+                <p class="text-neutral">设备类电池、电动车、平衡车、移动电源、储能电池等纯电产品</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start space-x-4">
+              <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <i class="fa fa-check-circle text-primary"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-dark mb-2">渠道优势</h4>
+                <p class="text-neutral">正规DG柜运输，合规备案，安全系数高，时效稳定可追溯</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start space-x-4">
+              <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <i class="fa fa-check-circle text-primary"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-dark mb-2">配套服务</h4>
+                <p class="text-neutral">提供MSDS&UN38.3认证协助，独立包装+绝缘防护，全程专业操作</p>
+              </div>
+            </div>
+          </div>
+          
+          <a href="#inquiry" class="inline-block bg-primary hover:bg-primary/90 text-white font-medium py-3 px-8 rounded-lg transition-custom">
+            咨询纯电运输方案
+          </a>
+        </div>
+        
+        <div class="bg-white rounded-xl shadow-lg p-8">
+          <h4 class="text-xl font-bold mb-6 text-center">纯电DG柜运输要求</h4>
+          <div class="space-y-4">
+            <div class="flex items-start space-x-3">
+              <div class="mt-1 w-5 h-5 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                <i class="fa fa-angle-right text-primary text-xs"></i>
+              </div>
+              <p class="text-neutral">电池功率≤100WH，需标注伏数（V）、毫安（mAh）、功率（WH）信息</p>
+            </div>
+            <div class="flex items-start space-x-3">
+              <div class="mt-1 w-5 h-5 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                <i class="fa fa-angle-right text-primary text-xs"></i>
+              </div>
+              <p class="text-neutral">提供MSDS&UN38.3认证文件，海运鉴定书（可协助办理）</p>
+            </div>
+            <div class="flex items-start space-x-3">
+              <div class="mt-1 w-5 h-5 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                <i class="fa fa-angle-right text-primary text-xs"></i>
+              </div>
+              <p class="text-neutral">电池产品需独立包装，做好绝缘防护，避免短路风险</p>
+            </div>
+            <div class="flex items-start space-x-3">
+              <div class="mt-1 w-5 h-5 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                <i class="fa fa-angle-right text-primary text-xs"></i>
+              </div>
+              <p class="text-neutral">产品需如实申报，严禁瞒报、夹带非纯电类货物</p>
+            </div>
+            <div class="flex items-start space-x-3">
+              <div class="mt-1 w-5 h-5 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                <i class="fa fa-angle-right text-primary text-xs"></i>
+              </div>
+              <p class="text-neutral">包装需牢固防震，适应长途运输，外箱标注“纯电池”“DG”等标识</p>
+            </div>
+          </div>
+          
+          <div class="mt-8 pt-6 border-t border-gray-100">
+            <h5 class="font-semibold text-dark mb-3">功率计算方式</h5>
+            <p class="text-neutral mb-2">功率（WH）= 毫安（mAh）× 伏数（V）÷ 1000</p>
+            <p class="text-primary font-medium">示例：3000mAh × 3.7V ÷ 1000 = 11.1WH（符合要求）</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 海外仓资源 -->
+  <section id="warehouse" class="py-20 bg-light">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark mb-4">海外仓资源</h2>
+        <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+        <p class="text-neutral max-w-2xl mx-auto">全球三大海外仓布局，提供仓储、换标、中转、一件代发等一体化服务，助力跨境电商高效运营</p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- 美国海外仓 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden transition-custom card-hover">
+          <div class="h-48 overflow-hidden">
+            <img src="https://picsum.photos/id/1067/800/600" alt="美国海外仓" class="w-full h-full object-cover transition-custom hover:scale-105">
+          </div>
+          <div class="p-6">
+            <div class="flex items-center space-x-2 mb-4">
+              <i class="fa fa-map-marker text-primary text-xl"></i>
+              <h3 class="text-xl font-bold">美国海外仓（CA91）</h3>
+            </div>
+            <p class="text-neutral mb-6">位于美国加州，紧邻洛杉矶港口，地理位置优越，覆盖美西主要亚马逊仓库及商业地址。</p>
+            <div class="space-y-3 mb-6">
+              <div class="flex justify-between text-sm">
+                <span class="text-neutral">仓储面积</span>
+                <span class="font-medium">5000㎡</span>
+              </div>
+              <div class="flex justify-between text-sm">
+                <span class="text-neutral">服务范围</span>
+                <span class="font-medium">美西全境</span>
+              </div>
+              <div class="flex justify-between text-sm">
+                <span class="text-neutral">配送时效</span>
+                <span class="font-medium">1-3天</span>
+              </div>
+            </div>
+            <h4 class="font-semibold mb-2">核心服务</h4>
+            <ul class="flex flex-wrap gap-2">
+              <li class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">FBA换标</li>
+              <li class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">移仓中转</li>
+              <li class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">一件代发</li>
+              <li class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">退货处理</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- 波兰海外仓 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden transition-custom card-hover">
+          <div class="h-48 overflow-hidden">
+            <img src="https://picsum.photos/id/1031/800/600" alt="波兰海外仓" class="w-full h-full object-cover transition-custom hover:scale-105">
+          </div>
+          <div class="p-6">
+            <div class="flex items-center space-x-2 mb-4">
+              <i class="fa fa-map-marker text-primary text-xl"></i>
+              <h3 class="text-xl font-bold">波兰海外仓（Warsaw）</h3>
+            </div>
+            <p class="text-neutral mb-6">位于波兰华沙，辐射整个欧洲大陆，是中欧班列重要节点，清关高效便捷。</p>
+            <div class="space-y-3 mb-6">
+              <div class="flex justify-between text-sm">
+                <span class="text-neutral">仓储面积</span>
+                <span class="font-medium">2000㎡</span>
+              </div>
+              <div class="flex justify-between text-sm">
+                <span class="text-neutral">服务范围</span>
+                <span class="font-medium">欧盟全境</span>
+              </div>
+              <div class="flex justify-between text-sm">
+                <span class="text-neutral">配送时效</span>
+                <span class="font-medium">2-5天</span>
+              </div>
+            </div>
+            <h4 class="font-semibold mb-2">核心服务</h4>
+            <ul class="flex flex-wrap gap-2">
+              <li class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">欧洲FBA中转</li>
+              <li class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">清关协助</li>
+              <li class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">本地派送</li>
+              <li class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">库存管理</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- 加拿大海外仓 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden transition-custom card-hover">
+          <div class="h-48 overflow-hidden">
+            <img src="https://picsum.photos/id/1040/800/600" alt="加拿大海外仓" class="w-full h-full object-cover transition-custom hover:scale-105">
+          </div>
+          <div class="p-6">
+            <div class="flex items-center space-x-2 mb-4">
+              <i class="fa fa-map-marker text-primary text-xl"></i>
+              <h3 class="text-xl font-bold">加拿大海外仓（Toronto）</h3>
+            </div>
+            <p class="text-neutral mb-6">位于加拿大多伦多，覆盖加拿大主要城市，支持亚马逊FBA及本地电商平台配送。</p>
+            <div class="space-y-3 mb-6">
+              <div class="flex justify-between text-sm">
+                <span class="text-neutral">仓储面积</span>
+                <span class="font-medium">1000㎡</span>
+              </div>
+              <div class="flex justify-between text-sm">
+                <span class="text-neutral">服务范围</span>
+                <span class="font-medium">加拿大全境</span>
+              </div>
+              <div class="flex justify-between text-sm">
+                <span class="text-neutral">配送时效</span>
+                <span class="font-medium">2-4天</span>
+              </div>
+            </div>
+            <h4 class="font-semibold mb-2">核心服务</h4>
+            <ul class="flex flex-wrap gap-2">
+              <li class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">FBA补货</li>
+              <li class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">退货换标</li>
+              <li class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">一件代发</li>
+              <li class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">本地退换货</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系我们 -->
+  <section id="contact" class="py-20 bg-light">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark mb-4">联系我们</h2>
+        <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+        <p class="text-neutral max-w-2xl mx-auto">无论您有任何物流需求或疑问，欢迎通过以下方式联系我们，我们将尽快为您提供专业服务</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-12">
+        <div>
+          <div class="bg-white p-8 rounded-xl shadow-md h-full">
+            <h3 class="text-2xl font-bold mb-6">联系方式</h3>
+            
+            <div class="space-y-6 mb-8">
+              <div class="flex items-start space-x-4">
+                <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <i class="fa fa-map-marker text-primary"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-dark mb-1">公司总部地址</h4>
+                  <p class="text-neutral">深圳市龙岗区龙岗街道远洋新干线远洋广场12栋A座103</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start space-x-4">
+                <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <i class="fa fa-phone text-primary"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-dark mb-1">客服电话</h4>
+                  <p class="text-neutral">15773726666</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start space-x-4">
+                <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <i class="fa fa-envelope text-primary"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-dark mb-1">电子邮箱</h4>
+                  <p class="text-neutral">huangzhenjun79@gamil.com</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start space-x-4">
+                <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <i class="fa fa-clock-o text-primary"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-dark mb-1">工作时间</h4>
+                  <p class="text-neutral">周一至周五: 9:00 - 18:00</p>
+                  <p class="text-neutral">周六至周日: 10:00 - 16:00（节假日除外）</p>
+                </div>
+              </div>
+            </div>
+            
+            <div>
+              <h4 class="font-semibold text-dark mb-4">关注我们</h4>
+              <div class="flex space-x-4">
+                <a href="#" class="w-10 h-10 bg-primary/10 hover:bg-primary rounded-full flex items-center justify-center text-primary transition-custom">
+                  <i class="fa fa-weixin"></i>
+                </a>
+                <a href="#" class="w-10 h-10 bg-primary/10 hover:bg-primary rounded-full flex items-center justify-center text-primary transition-custom">
+                  <i class="fa fa-weibo"></i>
+                </a>
+                <a href="#" class="w-10 h-10 bg-primary/10 hover:bg-primary rounded-full flex items-center justify-center text-primary transition-custom">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="#" class="w-10 h-10 bg-primary/10 hover:bg-primary rounded-full flex items-center justify-center text-primary transition-custom">
+                  <i class="fa fa-youtube-play"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div>
+          <div class="bg-white p-8 rounded-xl shadow-md h-full">
+            <h3 class="text-2xl font-bold mb-6">在线留言</h3>
+            <form>
+              <div class="mb-4">
+                <label for="contactName" class="block text-dark font-medium mb-2">姓名</label>
+                <input type="text" id="contactName" class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-custom" placeholder="请输入您的姓名">
+              </div>
+              
+              <div class="mb-4">
+                <label for="contactPhone" class="block text-dark font-medium mb-2">电话</label>
+                <input type="tel" id="contactPhone" class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-custom" placeholder="请输入您的电话">
+              </div>
+              
+              <div class="mb-4">
+                <label for="contactEmail" class="block text-dark font-medium mb-2">邮箱</label>
+                <input type="email" id="contactEmail" class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-custom" placeholder="请输入您的邮箱">
+              </div>
+              
+              <div class="mb-6">
+                <label for="contactMessage" class="block text-dark font-medium mb-2">留言内容</label>
+                <textarea id="contactMessage" rows="4" class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-custom" placeholder="请输入您的需求或疑问"></textarea>
+              </div>
+              
+              <button type="submit" class="w-full bg-primary hover:bg-primary/90 text-white font-medium py-3 px-6 rounded-lg transition-custom">
+                发送留言
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="bg-dark text-white pt-16 pb-8">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div>
+          <div class="flex items-center space-x-2 mb-6">
+            <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
+              <i class="fa fa-globe text-primary text-xl"></i>
+            </div>
+            <span class="text-xl font-bold">盛世德坤</span>
+          </div>
+          <p class="text-gray-400 mb-6">深圳市盛世德坤国际物流有限公司是专业的一级国际货运公司，专注全球物流解决方案，为客户提供安全、高效、便捷的物流服务。</p>
+          <div class="flex space-x-4">
+            <a href="#" class="w-8 h-8 bg-gray-800 hover:bg-primary rounded-full flex items-center justify-center transition-custom">
+              <i class="fa fa-weixin"></i>
+            </a>
+            <a href="#" class="w-8 h-8 bg-gray-800 hover:bg-primary rounded-full flex items-center justify-center transition-custom">
+              <i class="fa fa-weibo"></i>
+            </a>
+            <a href="#" class="w-8 h-8 bg-gray-800 hover:bg-primary rounded-full flex items-center justify-center transition-custom">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="#" class="w-8 h-8 bg-gray-800 hover:bg-primary rounded-full flex items-center justify-center transition-custom">
+              <i class="fa fa-youtube-play"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="text-lg font-semibold mb-6">核心业务</h4>
+          <ul class="space-y-3">
+            <li><a href="#business" class="text-gray-400 hover:text-white transition-custom">国际海运</a></li>
+            <li><a href="#business" class="text-gray-400 hover:text-white transition-custom">国际空运</a></li>
+            <li><a href="#fba" class="text-gray-400 hover:text-white transition-custom">FBA专线</a></li>
+            <li><a href="#dg" class="text-gray-400 hover:text-white transition-custom">纯电DG柜</a></li>
+            <li><a href="#warehouse" class="text-gray-400 hover:text-white transition-custom">海外仓服务</a></li>
+            <li><a href="#business" class="text-gray-400 hover:text-white transition-custom">双清包税</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="text-lg font-semibold mb-6">关于我们</h4>
+          <ul class="space-y-3">
+            <li><a href="#about" class="text-gray-400 hover:text-white transition-custom">公司简介</a></li>
+            <li><a href="#business" class="text-gray-400 hover:text-white transition-custom">服务网络</a></li>
+            <li><a href="#warehouse" class="text-gray-400 hover:text-white transition-custom">海外仓资源</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-custom">新闻动态</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-custom">招贤纳士</a></li>
+            <li><a href="#contact" class="text-gray-400 hover:text-white transition-custom">联系我们</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="text-lg font-semibold mb-6">联系信息</h4>
+          <ul class="space-y-3">
+            <li class="flex items-start space-x-3">
+              <i class="fa fa-map-marker text-gray-400 mt-1"></i>
+              <span class="text-gray-400">深圳市龙岗区龙岗街道远洋新干线远洋广场12栋A座103</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fa fa-phone text-gray-400"></i>
+              <span class="text-gray-400">15773726666</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fa fa-envelope text-gray-400"></i>
+              <span class="text-gray-400">huangzhenjun79@gmail.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-800 pt-8">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 深圳市盛世德坤国际物流有限公司 版权所有 | 粤ICP备12345678号</p>
+          <div class="flex space-x-6">
+            <a href="#" class="text-gray-400 hover:text-white text-sm transition-custom">隐私政策</a>
+            <a href="#" class="text-gray-400 hover:text-white text-sm transition-custom">服务条款</a>
+            <a href="#" class="text-gray-400 hover:text-white text-sm transition-custom">网站地图</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 回到顶部按钮 -->
+  <button id="backToTop" class="fixed bottom-8 right-8 w-12 h-12 bg-primary hover:bg-primary/90 text-white rounded-full flex items-center justify-center shadow-lg transition-custom opacity-0 invisible">
+    <i class="fa fa-arrow-up"></i>
+  </button>
+
+  <script>
+    // 导航栏滚动效果
+    const navbar = document.getElementById('navbar');
+    const backToTop = document.getElementById('backToTop');
+    
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 100) {
+        navbar.classList.add('nav-scrolled');
+        navbar.classList.remove('bg-transparent');
+        // 更改导航文字颜色
+        document.querySelectorAll('#navbar a, #navbar span').forEach(item => {
+          item.classList.remove('text-white');
+          item.classList.add('text-dark');
+        });
+        // 显示回到顶部按钮
+        backToTop.classList.remove('opacity-0', 'invisible');
+        backToTop.classList.add('opacity-100', 'visible');
+      } else {
+        navbar.classList.remove('nav-scrolled');
+        navbar.classList.add('bg-transparent');
+        // 恢复导航文字颜色
+        document.querySelectorAll('#navbar a, #navbar span').forEach(item => {
+          item.classList.add('text-white');
+          item.classList.remove('text-dark');
+        });
+        // 隐藏回到顶部按钮
+        backToTop.classList.add('opacity-0', 'invisible');
+        backToTop.classList.remove('opacity-100', 'visible');
+      }
+    });
+    
+    // 移动端菜单
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    
+    menuBtn.addEventListener('click', function() {
+      mobileMenu.classList.toggle('hidden');
+      // 切换图标
+      const icon = menuBtn.querySelector('i');
+      if (icon.classList.contains('fa-bars')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-times');
+      } else {
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+      }
+    });
+    
+    // 关闭移动端菜单（点击链接后）
+    document.querySelectorAll('#mobileMenu a').forEach(link => {
+      link.addEventListener('click', function() {
+        mobileMenu.classList.add('hidden');
+        const icon = menuBtn.querySelector('i');
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+      });
+    });
+    
+    // 回到顶部功能
+    backToTop.addEventListener('click', function() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+    
+    // 询价表单提交提示
+    document.querySelector('#inquiry form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('询价申请提交成功！我们将尽快与您联系，提供精准报价。');
+      this.reset();
+    });
+    
+    // 留言表单提交提示
+    document.querySelector('#contact form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('留言发送成功！我们将尽快为您回复。');
+      this.reset();
+    });
+  </script>
+</body>
+</html>

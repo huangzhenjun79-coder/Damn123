@@ -1,0 +1,18 @@
+<svg width="120" height="40" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景框 -->
+  <path d="M10,5 L110,5 L110,35 L10,35 Z" fill="white" stroke="#000000" stroke-width="2" rx="2" ry="2"/>
+  
+  <!-- SRK标志 - 黑色部分 -->
+  <path d="M25,10 L50,10 L50,30 L40,30 L40,15 L30,15 L30,30 L25,30 Z" fill="#000000"/>
+  <path d="M60,10 L70,10 L70,30 L60,30 Z" fill="#000000"/>
+  <path d="M80,10 L90,10 L90,30 L80,30 Z" fill="#000000"/>
+  
+  <!-- SRK标志 - 红色部分 -->
+  <path d="M55,10 L65,10 L65,30 L55,30 Z" fill="#E53935"/>
+  <path d="M75,10 L85,10 L85,30 L75,30 Z" fill="#E53935"/>
+  <path d="M95,15 L90,20 L95,25 L100,20 Z" fill="#E53935"/>
+  
+  <!-- 公司名称 -->
+  <text x="10" y="45" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#000000">深圳盛世德坤国际物流</text>
+  <text x="10" y="52" font-family="Arial, sans-serif" font-size="6" fill="#000000">Shenzhen Shengshi Dekun International Logistics</text>
+</svg>
